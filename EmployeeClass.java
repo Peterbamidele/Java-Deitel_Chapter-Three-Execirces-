@@ -27,19 +27,19 @@ public class EmployeeClass{
     private  String department;
     private String position;
 
-    // construtor
+    // constructor
     public EmployeeClass(String employeeName, int employeeIdNumber, String employeeDepartment, String employeePosition ){
        this.name = employeeName;
         this.idNumber = employeeIdNumber;
         this.department = employeeDepartment;
         this.position = employeePosition;
     }
-    public EmployeeClass(String employeeName, int employeeIdNumber){
-        this.name = employeeName;
-        this.idNumber = employeeIdNumber;
-        this.department = "";
-        this.position = "";
-    }
+//    public EmployeeClass(String employeeName, int employeeIdNumber,String employeeDepartment,String employeePostion){
+//        this.name = employeeName;
+//        this.idNumber = employeeIdNumber;
+//        this.department = employeeDepartment;
+//        this.position = employeePostion;
+//    }
 
     public EmployeeClass(){
         this.name = "";
@@ -55,7 +55,7 @@ public class EmployeeClass{
         this.name = nameGiven;
     }
 
-    //idnumber
+    //id number
 
     public void setIdNumber(int idNumberGiven) {
         this.idNumber = idNumberGiven;
@@ -78,15 +78,15 @@ public class EmployeeClass{
         return name;
     }
 
-    public int getIdNumber() {
+    public int getIdNumber(int i) {
         return idNumber;
     }
 
-    public String getDepartment() {
+    public String getDepartment(String accounting) {
         return department;
     }
 
-    public String getPosition() {
+    public String getPosition(String level1) {
         return position;
     }
 }

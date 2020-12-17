@@ -1,5 +1,6 @@
 public class ExerciseExample3 {
-        private String name;// instance Variable
+    private static String name;
+//    private String name;// instance Variable
 
         //method to set and get the name
 
@@ -8,7 +9,7 @@ public class ExerciseExample3 {
         this.name = name;// store the value
     }
 
-    public String getName() {
+    public static String getName() {
         return name; // return a value
     }
 }

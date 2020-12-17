@@ -4,7 +4,7 @@ public class Account {
     private double balance;
 
 
-    // constrator
+    // constructor
     public Account(String name, double balance) {
         this.name = name;
         if (balance > 0.0)
