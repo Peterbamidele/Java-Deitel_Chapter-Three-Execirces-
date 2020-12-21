@@ -13,6 +13,8 @@ public class InvoiceTest {
 
         // create invoice objects
         Invoice invoiceIssued = new Invoice();
+        Invoice invoiceIssued2 = new Invoice();
+
 
 
         //calling the set method
@@ -25,26 +27,62 @@ public class InvoiceTest {
 
         //Get invoice1 details from user
         System.out.println("invoice 1");
-        System.out.print("Enter the part number: ");
+        System.out.print("Enter the ReceiptNumber of the Slip: ");
         partNum = input.nextLine();
+        invoiceIssued.setPartNumber(partNum);
 
-        System.out.print("Enter the part description: ");
+
+
+        System.out.print("Enter the Slip Description: ");
         partDesc = input.nextLine();
+        invoiceIssued.setPartDescription(partDesc);
 
         System.out.print("Enter the Quantity: ");
         quantity = input.nextInt();
+        invoiceIssued.setQuantity(quantity);
 
         System.out.print("Enter the price #: ");
         price = input.nextDouble();
+        invoiceIssued.setPricePerItem(price);
 
         System.out.println("");
 
         // display form for invoice's data
         System.out.println("Invoice information");
-        System.out.println("Part Number" + invoiceIssued.getPartNumber());
-        System.out.println("Description" + invoiceIssued.getPartDescription());
-        System.out.println("Quantity" + invoiceIssued.getQuantity());
+        System.out.println("Serial-Number: " + invoiceIssued.getPartNumber());
+        System.out.println("Description: " + invoiceIssued.getPartDescription());
+        System.out.println("Quantity: " + invoiceIssued.getQuantity());
         System.out.printf("Invoice Amount: $%.2f",invoiceIssued.getInvoiceAmount());
+
+
+        //Get invoice2  details from SecondUser
+        System.out.println("invoice 2");
+        System.out.print("Enter the ReceiptNumber of the Slip: ");
+        partNum = input.nextLine();
+        invoiceIssued2.setPartNumber(partNum);
+
+
+
+        System.out.print("Enter the Slip-Product description: ");
+        partDesc = input.nextLine();
+        invoiceIssued2.setPartDescription(partDesc);
+
+        System.out.print("Enter the Quantity: ");
+        quantity = input.nextInt();
+        invoiceIssued2.setQuantity(quantity);
+
+        System.out.print("Enter the price #: ");
+        price = input.nextDouble();
+        invoiceIssued2.setPricePerItem(price);
+
+        System.out.println("");
+
+        // display form for invoice's data
+        System.out.println("Invoice information");
+        System.out.println("Part Number: " + invoiceIssued2.getPartNumber());
+        System.out.println("Description: " + invoiceIssued2.getPartDescription());
+        System.out.println("Quantity: " + invoiceIssued2.getQuantity());
+        System.out.printf("Invoice Amount: $%.2f",invoiceIssued2.getInvoiceAmount());
 
 
 
